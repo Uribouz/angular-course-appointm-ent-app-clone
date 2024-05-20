@@ -24,7 +24,7 @@ ng serve -o
 - contains our dependencies (3rd party libraries)
 
 ## 5 Starter files in the project
-### src/index.html
+### File: src/index.html
 Angular inject only one component to the application 'app-root'
 "<app-root></app-root>"
 
