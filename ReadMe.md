@@ -52,7 +52,7 @@ export class AppointmentListComponent {
 ```html
 - {{ myVariableName}}
 ```
-### Result will show 'Take a dog for a walk' on the screen.
+#### Result will show 'Take a dog for a walk' on the screen.
 
 ## 9 Create interface 'models/appointment'
 ```bash
@@ -72,7 +72,7 @@ export class MyModule {
   myNewTitle : string = "";
 }
 ```
-### variable 'myNewTitle' is now "Two-way binding".
+#### variable 'myNewTitle' is now "Two-way binding".
 
 ## 11 Event binding syntax ("https://angular.io/guide/event-binding")
 ### Usage Example:
@@ -88,4 +88,4 @@ export class MyModule {
   }
 }
 ```
-### ! When use click the button it will log 'Hello World' to the console.
+#### ! When use click the button it will log 'Hello World' to the console.
