@@ -39,7 +39,7 @@ $ ng g component appointment-list
 ```
 
 ## 7 Typescript tend to use 'Type' in initalization of variables
-- like this var myAge: number = 20;
+- Example: var myAge: number = 20;
 
 ## 8 One-way data binding syntax (Use in .html files)
 ### MyComponent.ts
@@ -53,3 +53,8 @@ export class AppointmentListComponent {
 - {{ myVariableName}}
 ```
 ### Result will show 'Take a dog for a walk' on the screen.
+
+## 9 Create interface 'models/appointment'
+```bash
+$ ng generate interface models/appointment
+```
