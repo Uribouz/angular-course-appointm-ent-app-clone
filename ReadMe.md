@@ -66,10 +66,26 @@ Import in "app.module.ts" and it also can be every module that got declared(will
 ```html
 <input [(ngModel)]="myNewTitle" placeholder="My description">
 ```
-#### MyModule.html
+#### MyModule.ts
 ```typescript
 export class MyModule {
   myNewTitle : string = "";
 }
 ```
 ### variable 'myNewTitle' is now "Two-way binding".
+
+## 11 Event binding syntax ("https://angular.io/guide/event-binding")
+### Usage Example:
+#### MyModule.html
+```html
+<button (click)="myFunction()"> Add </button>
+```
+#### MyModule.ts
+```typescript
+export class MyModule {
+  myFunction() {
+    console.log('Hello World');
+  }
+}
+```
+### ! When use click the button it will log 'Hello World' to the console.
