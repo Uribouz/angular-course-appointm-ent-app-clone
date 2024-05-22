@@ -32,3 +32,24 @@ Angular inject only one component to the application 'app-root'
 - selector: name of the component (to be use explicitly)
 - templateUrl: content of the component template.
 - styleUrls: styles css of the component.
+
+## 6 Create new component 'appointment-list'
+```bash
+$ ng g component appointment-list
+```
+
+## 7 Typescript tend to use 'Type' in initalization of variables
+- like this var myAge: number = 20;
+
+## 8 One-way data binding syntax (Use in .html files)
+### MyComponent.ts
+```typescript
+export class AppointmentListComponent {
+    myVariableName: string = 'Take a dog for a walk';
+}
+```
+### MyComponent.html
+```html
+- {{ myVariableName}}
+```
+### Result will show 'Take a dog for a walk' on the screen.
