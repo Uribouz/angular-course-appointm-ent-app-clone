@@ -58,3 +58,18 @@ export class AppointmentListComponent {
 ```bash
 $ ng generate interface models/appointment
 ```
+## 10 Two-way data binding syntax (Use in .html files)
+### Import built-in library "FormsModule" ("https://angular.io/api/forms/FormsModule")
+Import in "app.module.ts" and it also can be every module that got declared(will beused in "AppointmentListComponent")
+### Usage Example:
+#### MyModule.html
+```html
+<input [(ngModel)]="myNewTitle" placeholder="My description">
+```
+#### MyModule.html
+```typescript
+export class MyModule {
+  myNewTitle : string = "";
+}
+```
+### variable 'myNewTitle' is now "Two-way binding".
