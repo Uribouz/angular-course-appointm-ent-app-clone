@@ -89,3 +89,14 @@ export class MyModule {
 }
 ```
 #### ! When use click the button it will log 'Hello World' to the console.
+
+## 12 Life Cycle Hooks
+### ngOnInit() method, a function to run when the class is instantiated.
+
+```typescript
+export class MyClass implements OnInit{
+  ngOnInit(): void {
+    //! Implement your initialization here ...
+    throw new Error('Method not implemented.');
+  }
+```
