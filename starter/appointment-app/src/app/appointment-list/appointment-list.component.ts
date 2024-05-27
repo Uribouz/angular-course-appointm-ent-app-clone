@@ -10,7 +10,6 @@ export class AppointmentListComponent {
   newAppointmentTitle : string = "";
   newAppointmentDate: Date = new Date();
   appointments: Appointment[] = [];
-
   addAppointment() {
     if (this.newAppointmentTitle.trim().length && this.newAppointmentDate) {
       let newAppointment: Appointment = {
@@ -23,5 +22,9 @@ export class AppointmentListComponent {
       this.newAppointmentDate = new Date();
     }
     console.log(this.appointments)
+  }
+
+  deleteAppointment(index: number) {
+    this.appointments.splice(index, 1);
   }
 }
