@@ -100,3 +100,10 @@ export class MyClass implements OnInit{
     throw new Error('Method not implemented.');
   }
 ```
+
+## 13 Bootstrap
+Install bootstrap using command line
+
+```bash
+$ npm i bootstrap@5.3.3
+```
