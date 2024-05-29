@@ -107,3 +107,53 @@ Install bootstrap using command line
 ```bash
 $ npm i bootstrap@5.3.3
 ```
+
+## 14 ng cli Cheatsheet
+Save this sheet for later and refer to it whenever you need a quick refresher:
+
+### Creates a new Angular project with the specified project name.
+```bash
+$ ng new projectName
+```
+
+### Builds the application and starts a web server to serve your application during development.
+```bash
+$ ng serve
+```
+
+### Same as ng serve, but also opens your default web browser to the application.
+```bash
+$ ng serve --open
+
+or
+
+$ ng serve -o
+```
+
+### Generates a new component with the specified name.
+```bash
+$ ng generate component componentName
+
+or
+
+$ ng g c componentName
+```
+
+### Generates a new service with the specified name.
+```bash
+$ ng generate service serviceName
+
+or
+
+$ ng g s serviceName
+```
+
+### Builds your application for production, creating a dist/ folder with the output.
+```bash
+$ ng build
+```
+
+### Checks your application for outdated dependencies, and can also update them.
+```bash
+$ ng update
+```
