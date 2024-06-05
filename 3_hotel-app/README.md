@@ -54,3 +54,9 @@ $ ng g component reservation-list --module="reservation"
 ``` bash
 $ ng g service reservation/reservation
 ```
+
+
+#### 11) Generate interface "reservation" inside folder "models"
+``` bash
+$ ng g interface models/reservation
+```
