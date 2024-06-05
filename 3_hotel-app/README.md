@@ -60,3 +60,22 @@ $ ng g service reservation/reservation
 ``` bash
 $ ng g interface models/reservation
 ```
+
+## 2) Implementing the Application
+
+#### 1) add routing to the homepage
+File "app-routing.module.ts"
+Below variable is the variable used to routing the path to the component your want.
+
+Example 1): Below will route the "root" ("localhost:4200/") of the application to the "HomeComponent"
+```typescript
+const routes: Routes = [
+  {path: "", component: HomeComponent}
+];
+```
+Example 2): Below will route the "/list" path  ("localhost:4200/list") of the application to the "ReservationListComponent"
+```typescript
+const routes: Routes = [
+  {path: "list", component: ReservationListComponent},
+];
+```
