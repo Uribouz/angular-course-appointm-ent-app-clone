@@ -79,3 +79,48 @@ const routes: Routes = [
   {path: "list", component: ReservationListComponent},
 ];
 ```
+
+#### 2) Add routing "new" to the button to make it go to the path we specified in "app-routing.module.ts"
+
+File: xxx.component.html
+```html
+<div>
+    <button [routerLink]="['/new']"> Create a new reservation</button>
+</div>
+```
+
+To be able to use tag "[routerLink]"
+##### 1) We need to import "RouterModule"
+File: xxx.module.ts
+```typescript
+import { RouterModule } from '@angular/router';
+
+@NgModule({
+  declarations: [
+    XXXComponent
+  ],
+  imports: [
+    RouterModule
+  ]
+})
+export class XXXModule { }
+```
+
+##### 2) Also import the module in file "app.module.ts"
+File: app.module.ts
+```typescript
+import { XXXModule} from './xxx/xxx.module';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    XXXModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
