@@ -124,3 +124,26 @@ import { XXXModule} from './xxx/xxx.module';
 export class AppModule { }
 
 ```
+
+#### 3) Two types of "Form" Validation
+##### 1) Reactive Form Validation
+  - Validate Form in  TypeScript class
+##### 2) Template-Driven Form Validation
+  - Validate Form in HTML template
+
+Using import "ReactiveFormsModule" in reservation.module.ts
+```typescript
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+@NgModule({
+  declarations: [
+    ReservationListComponent,
+    ReservationFormComponent
+  ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
+  ]
+})
+export class ReservationModule { }
+```
