@@ -147,3 +147,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class ReservationModule { }
 ```
+
+#### 4) Usage of "ng-template" with hashtag (#)
+
+One can use ng-template to handle the state of the website when there is no data to be shown like below example.
+
+```typescript
+<ul *ngIf="reservations.length; else noReservation">
+    Hello World 111
+</ul>
+
+<ng-template #noReservation>
+   Hello World 222
+</ng-template>
+```
