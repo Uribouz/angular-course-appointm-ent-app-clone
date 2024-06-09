@@ -9,8 +9,9 @@ export class ReservationService {
   // CRUD
 
   constructor() {
-    let savedReservations = localStorage.getItem('reservation');
+    let savedReservations = localStorage.getItem("reservations");
     this.reservations = savedReservations ? JSON.parse(savedReservations): [];
+    console.log(savedReservations)
   }
 
   getReservations(): Reservation[] {
