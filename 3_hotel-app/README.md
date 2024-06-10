@@ -193,3 +193,14 @@ import { RouterModule } from '@angular/router';
 export class ReservationModule { }
 
 ```
+
+##### 4) Get current route parameter
+
+For example: want to get value from the paramter 'id'
+```typescript
+    import { ActivatedRoute } from '@angular/router';
+
+    constructor(private activatedRoute: ActivatedRoute) {}
+
+    let id = this.activatedRoute.snapshot.paramMap.get('id')
+````
