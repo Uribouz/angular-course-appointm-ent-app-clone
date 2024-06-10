@@ -161,3 +161,35 @@ One can use ng-template to handle the state of the website when there is no data
    Hello World 222
 </ng-template>
 ```
+####  5) Using 'routerLink' to navigate to another route
+
+##### 1) Add button event when clicked, it will navigate user to route '/edit'
+File: reservation-list.component.html
+```html
+<button [routerLink]="['/edit', reservation.id]"> Edit </button>
+```
+
+##### 2) Setup global route to be know to the whole application.
+File: app-routing.module.ts
+```typescript
+const routes: Routes = [
+  {path: "edit/:id", component: ReservationFormComponent}
+];
+```
+
+##### 3) Inject import of "RouterModule" to the componenet "ReservationListComponent"
+File: reservation.module.ts
+```typescript
+import { RouterModule } from '@angular/router';
+
+@NgModule({
+  declarations: [
+    ReservationListComponent
+  ],
+  imports: [
+    RouterModule
+  ]
+})
+export class ReservationModule { }
+
+```
