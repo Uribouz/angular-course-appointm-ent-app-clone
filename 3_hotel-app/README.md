@@ -205,7 +205,7 @@ For example: want to get value from the paramter 'id'
     let id = this.activatedRoute.snapshot.paramMap.get('id')
 ```
 
-##### 5) Using the Module in multiple components
+#### 6) Using the Module in multiple components
 File A.component.ts
 ```typescript
 @Component({
@@ -256,4 +256,9 @@ File: B_1.component.html
 File: B_2.component.html
 ```html
 <my-component-A></my-component-A>
+```
+
+#### 7) Install bootstrap (for css styling) 
+```bash
+$ npm install bootstrap@5.3
 ```
