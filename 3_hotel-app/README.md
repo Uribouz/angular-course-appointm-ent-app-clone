@@ -203,4 +203,57 @@ For example: want to get value from the paramter 'id'
     constructor(private activatedRoute: ActivatedRoute) {}
 
     let id = this.activatedRoute.snapshot.paramMap.get('id')
-````
+```
+
+##### 5) Using the Module in multiple components
+File A.component.ts
+```typescript
+@Component({
+  selector: 'my-component-A'
+})
+export class Component_A {
+
+}
+```
+
+File: A.module.ts
+```typescript
+@NgModule({
+  declarations: [
+    Component_A
+  ],
+  imports: [
+  ],
+  exports: [
+    Component_A
+  ]
+})
+export class Module_A { }
+```
+
+File: B.module.ts
+```typescript
+import { Module_A } from '../A/A.module';
+import { Component_B1 } from '../B_1/B_1.component';
+import { Component_B2 } from '../B_1/B_2.component';
+@NgModule({
+  declarations: [
+    Component_B1,
+    Component_B2
+  ],
+  imports: [
+    Module_A
+  ]
+})
+export class Module_B { }
+```
+
+File: B_1.component.html
+```html
+<my-component-A></my-component-A>
+```
+
+File: B_2.component.html
+```html
+<my-component-A></my-component-A>
+```
