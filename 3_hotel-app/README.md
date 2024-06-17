@@ -262,3 +262,7 @@ File: B_2.component.html
 ```bash
 $ npm install bootstrap@5.3
 ```
+
+#### 8) Always read the documentation of 'Bootstrap'
+
+[BootStrap](https://getbootstrap.com/docs/5.3/forms/form-control/)
