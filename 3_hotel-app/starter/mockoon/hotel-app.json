@@ -8,84 +8,216 @@
   "hostname": "",
   "folders": [],
   "routes": [
-    {
-      "uuid": "b7b41cfe-2100-475a-a491-77cb4c5cb9c3",
-      "type": "http",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "reservations",
-      "responses": [
-        {
-          "uuid": "f5747bdd-e4d6-4086-ad5f-fac743c5d475",
-          "body": "[\n  {\n    \"id\": 1,\n    \"guestName\": \"Ball\",\n    \"guestEmail\": \"b@b.com\",\n    \"roomNumber\": 101,\n    \"checkInDate\": \"2023-08-08\",\n    \"checkOutDate\": \"2023-08-10\"\n  },\n  {\n    \"id\": 2,\n    \"guestName\": \"Big\",\n    \"guestEmail\": \"b@b2.com\",\n    \"roomNumber\": 102,\n    \"checkInDate\": \"2023-08-09\",\n    \"checkOutDate\": \"2023-08-11\"\n  }\n]",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "bodyType": "INLINE",
-          "filePath": "",
-          "databucketID": "",
-          "sendFileAsBody": false,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id",
-          "callbacks": []
-        }
-      ],
-      "responseMode": null
-    }
+      {
+          "uuid": "b7b41cfe-2100-475a-a491-77cb4c5cb9c3",
+          "type": "http",
+          "documentation": "",
+          "method": "get",
+          "endpoint": "reservations",
+          "responses": [
+              {
+                  "uuid": "f5747bdd-e4d6-4086-ad5f-fac743c5d475",
+                  "body": "[\n  {\n    \"id\": 1,\n    \"guestName\": \"Ball\",\n    \"guestEmail\": \"b@b.com\",\n    \"roomNumber\": 101,\n    \"checkInDate\": \"2023-08-08\",\n    \"checkOutDate\": \"2023-08-10\"\n  },\n  {\n    \"id\": 2,\n    \"guestName\": \"Big\",\n    \"guestEmail\": \"b@b2.com\",\n    \"roomNumber\": 102,\n    \"checkInDate\": \"2023-08-09\",\n    \"checkOutDate\": \"2023-08-11\"\n  }\n]",
+                  "latency": 0,
+                  "statusCode": 200,
+                  "label": "",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      },
+      {
+          "uuid": "51234587-4498-4207-a984-24423770763b",
+          "type": "http",
+          "documentation": "",
+          "method": "get",
+          "endpoint": "reservation/:id",
+          "responses": [
+              {
+                  "uuid": "66806e59-ce8e-40b4-9acd-ae67089a1c82",
+                  "body": "{\n  \"id\": 1,\n  \"guestName\": \"Ball\",\n  \"guestEmail\": \"b@b.com\",\n  \"roomNumber\": 101,\n  \"checkInDate\": \"2023-08-08\",\n  \"checkOutDate\": \"2023-08-10\"\n}",
+                  "latency": 0,
+                  "statusCode": 200,
+                  "label": "",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      },
+      {
+          "uuid": "d6e9f555-c43b-4b62-a8d1-ed6aa19102aa",
+          "type": "http",
+          "documentation": "",
+          "method": "delete",
+          "endpoint": "reservation/:id",
+          "responses": [
+              {
+                  "uuid": "c4a3b68c-b2a5-4232-b3ce-856b83a156bd",
+                  "body": "",
+                  "latency": 0,
+                  "statusCode": 204,
+                  "label": "",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      },
+      {
+          "uuid": "39ac9a7c-bad7-411e-88d2-cf5215ce97a5",
+          "type": "http",
+          "documentation": "",
+          "method": "put",
+          "endpoint": "reservation/:id",
+          "responses": [
+              {
+                  "uuid": "8c3a9d87-88e3-44da-a6e5-9adafce78f04",
+                  "body": "{\n  \"id\": 1,\n  \"guestName\": \"Ball\",\n  \"guestEmail\": \"b@b.com\",\n  \"roomNumber\": 101,\n  \"checkInDate\": \"2023-08-08\",\n  \"checkOutDate\": \"2023-08-10\"\n}",
+                  "latency": 0,
+                  "statusCode": 200,
+                  "label": "",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      },
+      {
+          "uuid": "decd56d3-8895-4677-9bce-5ba2ec41923b",
+          "type": "http",
+          "documentation": "",
+          "method": "post",
+          "endpoint": "reservation",
+          "responses": [
+              {
+                  "uuid": "bc495d6d-a6dc-4244-a24f-7c34f779bceb",
+                  "body": "",
+                  "latency": 0,
+                  "statusCode": 201,
+                  "label": "",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      }
   ],
   "rootChildren": [
-    {
-      "type": "route",
-      "uuid": "b7b41cfe-2100-475a-a491-77cb4c5cb9c3"
-    }
+      {
+          "type": "route",
+          "uuid": "b7b41cfe-2100-475a-a491-77cb4c5cb9c3"
+      },
+      {
+          "type": "route",
+          "uuid": "51234587-4498-4207-a984-24423770763b"
+      },
+      {
+          "type": "route",
+          "uuid": "d6e9f555-c43b-4b62-a8d1-ed6aa19102aa"
+      },
+      {
+          "type": "route",
+          "uuid": "39ac9a7c-bad7-411e-88d2-cf5215ce97a5"
+      },
+      {
+          "type": "route",
+          "uuid": "decd56d3-8895-4677-9bce-5ba2ec41923b"
+      }
   ],
   "proxyMode": false,
   "proxyHost": "",
   "proxyRemovePrefix": false,
   "tlsOptions": {
-    "enabled": false,
-    "type": "CERT",
-    "pfxPath": "",
-    "certPath": "",
-    "keyPath": "",
-    "caPath": "",
-    "passphrase": ""
+      "enabled": false,
+      "type": "CERT",
+      "pfxPath": "",
+      "certPath": "",
+      "keyPath": "",
+      "caPath": "",
+      "passphrase": ""
   },
   "cors": true,
   "headers": [
-    {
-      "key": "Content-Type",
-      "value": "application/json"
-    },
-    {
-      "key": "Access-Control-Allow-Origin",
-      "value": "*"
-    },
-    {
-      "key": "Access-Control-Allow-Methods",
-      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
-    },
-    {
-      "key": "Access-Control-Allow-Headers",
-      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
-    }
+      {
+          "key": "Content-Type",
+          "value": "application/json"
+      },
+      {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+      },
+      {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+      },
+      {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+      }
   ],
   "proxyReqHeaders": [
-    {
-      "key": "",
-      "value": ""
-    }
+      {
+          "key": "",
+          "value": ""
+      }
   ],
   "proxyResHeaders": [
-    {
-      "key": "",
-      "value": ""
-    }
+      {
+          "key": "",
+          "value": ""
+      }
   ],
   "data": [],
   "callbacks": []
