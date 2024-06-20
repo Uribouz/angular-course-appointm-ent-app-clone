@@ -17,3 +17,8 @@ $ ng g s product/product
 ```bash
 $ ng g c product/product-list
 ```
+
+### 5 new product class
+```bash
+$ ng g class models/product
+```
