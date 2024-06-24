@@ -26,3 +26,7 @@ $ ng g class models/product
 ```bash
 $ ng g environments
 ```
+### 7 run application with setting configuration devlopment.
+```bash
+$ ng serve -o --configuration=development
+```
