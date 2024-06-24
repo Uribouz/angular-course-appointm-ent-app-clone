@@ -22,3 +22,7 @@ $ ng g c product/product-list
 ```bash
 $ ng g class models/product
 ```
+### 6 generate envionments
+```bash
+$ ng g environments
+```
