@@ -30,3 +30,6 @@ $ ng g environments
 ```bash
 $ ng serve -o --configuration=development
 ```
+
+### 8 Go to this following website and use an example source code in out product-list.component.html
+[material angular] (https://material.angular.io/components/card/examples)
