@@ -33,3 +33,16 @@ $ ng serve -o --configuration=development
 
 ### 8 Go to this following website and use an example source code in out product-list.component.html
 [material angular] (https://material.angular.io/components/card/examples)
+
+### 9 To apply angula material theme
+
+##### Add following line to file 'src/style.css'
+```css
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+```
+##### "@angular/material/prebuilt-themes/indigo-pink.css" is getting from "angular.json" under "styles"
+```json
+ "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+],
+```
