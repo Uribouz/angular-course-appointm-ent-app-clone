@@ -51,3 +51,10 @@ $ ng serve -o --configuration=development
 ```bash
 $ npm i @angular/flex-layout
 ```
+
+### 11 Init cart module, service, and component
+```bash
+$ ng g module cart
+$ ng g service cart/cart
+$ ng g component cart/cart-view
+```
