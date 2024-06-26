@@ -46,3 +46,8 @@ $ ng serve -o --configuration=development
               "@angular/material/prebuilt-themes/indigo-pink.css",
 ],
 ```
+
+### 10 Add angular flex layout
+```bash
+$ npm i @angular/flex-layout
+```
