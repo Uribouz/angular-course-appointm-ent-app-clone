@@ -14,8 +14,7 @@ import { MatIconModule} from '@angular/material/icon'
     CommonModule,
     MatCardModule,
     MatListModule,
-    MatButtonModule,
-    MatIconModule
+    MatButtonModule
   ]
 })
 export class CartModule { }
