@@ -12,8 +12,6 @@ export class ProductListComponent implements OnInit{
   products: Product[] = []
   fitleredProducts:  Product[] = []
 
-
-
   constructor(private productService: ProductService, 
     private cartService: CartService,
     private snackbar: MatSnackBar
@@ -21,6 +19,7 @@ export class ProductListComponent implements OnInit{
   ngOnInit(): void {
     this.productService.getProducts().subscribe(data => {
       this.products = data;
+      this.fitleredProducts = data;
     })
   }
 
