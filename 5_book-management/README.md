@@ -26,3 +26,14 @@ $ ng new book-management
 ```bash
 $ npm install @ngrx/store@16.2 @ngrx/effects@16.2
 ```
+
+### 3: create interface models/book
+```bash
+$ ng generate interface models/book
+```
+
+
+### 5: create interface app.state
+```bash
+$ ng generate interface app.state
+```
