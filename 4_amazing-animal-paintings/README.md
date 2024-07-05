@@ -58,3 +58,18 @@ $ ng g module cart
 $ ng g service cart/cart
 $ ng g component cart/cart-view
 ```
+
+### 12 NgRx: Building reactive applications with a single state.
+##### Store: 
+Hold the applcation state (immutable cannot get changed directly)
+##### **Actions**: 
+Events that modify state in the store.
+##### Reducers:
+Functions that take **actions** and modify the state base on the action type.
+##### Effects: 
+Handle asynchronous operations (like fetching data from a server) and then trigger new **actions**.
+
+#### One-way data flow
+##### Actions -> Reducers -> Updated State -> Selectors share updates
+The updated state is automatically passed to the components via **selectors**(component subscribe to the selector)
+
