@@ -50,3 +50,10 @@ $ ng generate interface app.state
 ```bash
 $ ng g component book-lis
 ```
+
+
+## Note:
+##### 1) Observable variable name convention '$'
+```typescript
+  books$: Observable<Book[]>;
+```
