@@ -45,3 +45,8 @@ $ ng generate interface models/book
 ```bash
 $ ng generate interface app.state
 ```
+
+### 6: Create component book-list
+```bash
+$ ng g component book-lis
+```
