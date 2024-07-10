@@ -51,9 +51,16 @@ $ ng generate interface app.state
 $ ng g component book-lis
 ```
 
+### 7: Create service books/book
+```bash
+$ ng g service books/book
+```
 
 ## Note:
 ##### 1) Observable variable name convention '$'
 ```typescript
   books$: Observable<Book[]>;
 ```
+
+
+
