@@ -55,6 +55,15 @@ $ ng g component book-lis
 ```bash
 $ ng g service books/book
 ```
+### 8: Install angular dev tools
+
+[Link](https://chromewebstore.google.com/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh?pli=1)
+
+
+### 9: Install package 'store-devtools'
+```bash
+npm install @ngrx/store-devtools
+```
 
 ## Note:
 ##### 1) Observable variable name convention '$'
