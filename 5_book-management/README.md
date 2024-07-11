@@ -62,7 +62,7 @@ $ ng g service books/book
 
 ### 9: Install package 'store-devtools'
 ```bash
-npm install @ngrx/store-devtools
+npm install @ngrx/store-devtools@16.2
 ```
 
 ## Note:
