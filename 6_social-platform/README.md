@@ -20,3 +20,8 @@ $ ng test --watch=false
 ```bash
 ng g service user/user
 ```
+
+### 4) create user-list container
+```bash
+ng g c user/user-list
+```
