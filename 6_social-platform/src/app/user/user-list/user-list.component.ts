@@ -11,6 +11,7 @@ export class UserListComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.refreshUsers();
   }
 
   refreshUsers(): void {

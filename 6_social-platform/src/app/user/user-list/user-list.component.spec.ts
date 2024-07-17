@@ -21,15 +21,19 @@ describe('UserListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(UserListComponent);
     component = fixture.componentInstance;
-    // fixture.detectChanges();
     userService = TestBed.inject(UserService)
     userServiceSpy = spyOn(userService, 'getUsers').and.returnValue(of([ 
       {id: 1, name: "John Doe"},
       {id: 2, name: "Maria Doe"}
     ]))
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should retrieved users from the UserSErvice on init', () => {
+    expect(userServiceSpy).toHaveBeenCalled();
+  })
 });
