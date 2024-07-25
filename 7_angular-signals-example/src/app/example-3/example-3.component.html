@@ -1,0 +1,10 @@
+<div>
+    <input type="text" (input)="changeFilter($event)">
+</div>
+<table>
+    <tr *ngFor="let product of filterProducts()">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+    </tr>
+</table>
