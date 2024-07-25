@@ -14,5 +14,8 @@ export class AppComponent {
 
   ngOnInit() {
 
+    // this.theme.set('dark');
+    this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
+    document.body.className = this.theme();
   }
 }
