@@ -1,4 +1,4 @@
-import { Component, signal, effect } from '@angular/core';
+import { Component, signal, effect, computed } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -13,6 +13,10 @@ export class AppComponent {
   theme = signal("dark")
   label  = this.theme();
 
+  price = 19;
+  quantity = signal(10)
+  totalPrice = computed(() => this.price * this.quantity());
+
   constructor() {
     effect(() => {
       this.label = this.theme();
@@ -21,5 +25,9 @@ export class AppComponent {
   }
   toggleDarkMode() {
     this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
+  }
+
+  changeQuantity(event: Event) {
+    this.quantity.set((event.target as HTMLInputElement).valueAsNumber);
   }
 }
